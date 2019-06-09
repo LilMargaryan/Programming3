@@ -35,10 +35,11 @@ function setup() {
     frameRate(10);
     createCanvas(matrix[0].length * side, matrix.length * side);
     background('#acacac');
-
+    
     for (var y = 0; y < matrix.length; ++y) {
         for (var x = 0; x < matrix[y].length; ++x) {
             if (matrix[y][x] == 1) {
+                var Grass = require('./Grass.js');
                 var gr = new Grass(x, y);
                 grassArr.push(gr);
             }
