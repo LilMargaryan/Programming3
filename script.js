@@ -9,7 +9,7 @@ var BnapahpanArr = [];
 var KendanapahpanArr=[];
 var BalansapahpanArr=[];
 var fireArr=[];
-
+//fdhbggbkgbkdfgbdfkgbf
 function setup() {
 
     n = Math.round(random(30, 50));
@@ -39,7 +39,7 @@ function setup() {
     for (var y = 0; y < matrix.length; ++y) {
         for (var x = 0; x < matrix[y].length; ++x) {
             if (matrix[y][x] == 1) {
-                var Grass = require('./Grass.js');
+                
                 var gr = new Grass(x, y);
                 grassArr.push(gr);
             }
@@ -149,7 +149,7 @@ function draw() {
     }
 
     for (var f in fireArr) {
-        if(++fireDur >= 10)
+        if(++fireDur >= 5)
         {
             fireArr[f].taracvel();
             fireDur = 0;
